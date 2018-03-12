@@ -17,7 +17,7 @@ if(countFrame > 100){
 	print = string_copy(str, 1, l);
 	
 	//play falling soundeffect
-	if(l == 30 && next == 0){
+	if(l == 10 && next == 1){
 		audio_play_sound(fall, 1,false); 
 	}
 

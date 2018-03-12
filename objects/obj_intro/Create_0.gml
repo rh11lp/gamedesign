@@ -11,14 +11,14 @@ next = 0; //which string is the next
 
 holdspace = 0;
 
-strings[0] = "Mother, wait up--Ah--Aaah!";
-strings[1] = "Ouch...";
+strings[0] = "Mother, wait up!";
+strings[1] = "Aaah!";
+strings[2] = "Ouch...";
 
-strings[2] = "You should try to be more careful, Daughter.";
-strings[3] = "Come. We must hurry.";
+strings[3] = "You should try to be more careful, Daughter.";
+strings[4] = "Come. We must hurry.";
 
-strings[4] = "...";
-//strings[4] = "Mother is so strong and brave.";
+strings[5] = "...";
 
 audio_play_sound(intro_loop, 1, true);
 
