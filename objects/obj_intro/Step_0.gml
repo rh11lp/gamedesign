@@ -33,3 +33,13 @@ if(countFrame > 100){
 
 	str = strings[next]
 }
+
+
+
+if(next==array_length_1d(strings)-1 && countFrame >= 1000){
+	fadeout = 1;
+	audio_sound_gain(intro_loop, 0, 500);
+}
+
+
+if (a==1 && fadeout==1) {room_goto_next(); audio_stop_sound(intro_loop);}

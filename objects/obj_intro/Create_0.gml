@@ -21,6 +21,7 @@ strings[4] = "Come. We must hurry.";
 strings[5] = "...";
 
 audio_play_sound(intro_loop, 1, true);
+musicGain = 1;
 
 countFrame = 0;
 
