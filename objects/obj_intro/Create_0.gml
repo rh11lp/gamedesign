@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-xpos = -640; //approaching 0 moves camera to the left
+xpos = 1156; //approaching 0 moves camera to the left
+ypos = 360;
 a = 1; //alpha transparency of fadeout/fadein
 fadeout = 0; //bool while 0 fadein, while 1 fadeout (ie when a and fadeout == 1, load next room)
 

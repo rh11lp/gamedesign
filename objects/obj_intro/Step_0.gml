@@ -2,8 +2,9 @@
 // You can write your code in this editor
 countFrame++;
 
-camera_set_view_pos(view_camera[0], xpos, 0);
-xpos = min(xpos+1, 0);
+camera_set_view_pos(view_camera[0], xpos, ypos);
+xpos = min(xpos+1, 1300);
+ypos = min(ypos+1, 1125);
 
 if(!fadeout) a = max(a-0.005,0.25); else a = min(a+0.005,1);
 
