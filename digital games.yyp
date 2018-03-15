@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00eb70ab-b897-4adc-b312-bf73de0ab38b",
+            "Value": {
+                "id": "d248aa6a-1934-4c7c-b985-05673cf937b5",
+                "resourcePath": "paths\\camera_intro\\camera_intro.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "1b88100a-8aa1-4fa6-8f65-a326517d8bdd",
             "Value": {
                 "id": "5e9e58ed-5bf5-464e-a341-17c83f196aed",

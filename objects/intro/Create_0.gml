@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 xpos = 1156; //approaching 0 moves camera to the left
 ypos = 360;
 a = 1; //alpha transparency of fadeout/fadein
@@ -25,6 +26,8 @@ audio_play_sound(intro_loop, 1, true);
 musicGain = 1;
 
 countFrame = 0;
+
+path_start(camera_intro, 2, path_action_stop, 1);
 
 
 
