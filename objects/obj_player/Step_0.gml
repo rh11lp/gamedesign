@@ -18,6 +18,7 @@ if(place_meeting(x+hsp, y, obj_obstacle)) {
 		x += sign(hsp);
 	}
 	hsp = 0;
+	
 }
 x += hsp;
 
@@ -31,6 +32,9 @@ if(place_meeting(x, y+vsp, obj_obstacle)) {
 }
 y += vsp;
 
+if(place_meeting(x+interactionThreshold, y+interactionThreshold, obj_mother)){
+	//speak
+}
 
 
 //////sprite aesthetic

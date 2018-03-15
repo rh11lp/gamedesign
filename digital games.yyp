@@ -58,7 +58,7 @@
             "Key": "3375624e-5b6a-432b-b016-11f026e65b45",
             "Value": {
                 "id": "61aa1f59-112e-4a72-887f-f8aa7793cd77",
-                "resourcePath": "objects\\obj_intro\\obj_intro.yy",
+                "resourcePath": "objects\\intro\\intro.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -92,6 +92,22 @@
                 "id": "4391ab95-34d3-4f2c-a529-1413d1ed6fff",
                 "resourcePath": "views\\4d6f32d0-d27b-4cce-92a6-c54c6196eb07.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "527dc7ce-879d-43a8-bdab-b6b4d7a2d4fc",
+            "Value": {
+                "id": "2efb0865-528b-45d2-9dbc-92965b07c83e",
+                "resourcePath": "objects\\obj_seed\\obj_seed.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "576887bc-75e0-4747-ad4f-1db2d0500bf1",
+            "Value": {
+                "id": "a7fa46bf-120b-44fb-86d3-0db3e8b7d3a7",
+                "resourcePath": "objects\\camera\\camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -154,7 +170,7 @@
             "Key": "7ea877e3-6742-4688-b9b9-1148a60f04ac",
             "Value": {
                 "id": "b8d1294d-7ce1-4bb2-965a-35b7dff8c09f",
-                "resourcePath": "objects\\obj_gameplay\\obj_gameplay.yy",
+                "resourcePath": "objects\\gameplay\\gameplay.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -223,6 +239,14 @@
             }
         },
         {
+            "Key": "a3af1a8e-01b5-419b-a983-444dbd9271d4",
+            "Value": {
+                "id": "5ec54041-7523-482b-a85c-f5474c89d4aa",
+                "resourcePath": "sprites\\spr_seed\\spr_seed.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a573780f-773a-4a7f-af7a-03c64a02c8fb",
             "Value": {
                 "id": "5afb5719-997e-4e47-81d6-be76e535e479",
@@ -244,6 +268,14 @@
                 "id": "a9f2a1c5-6b0c-4de8-a564-0de159b6d73f",
                 "resourcePath": "rooms\\intro_gameplay\\intro_gameplay.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c7d90106-29c9-482d-89a6-5d57829053ce",
+            "Value": {
+                "id": "9ec88ebd-99c3-4d7c-b0b3-762e969348e6",
+                "resourcePath": "sounds\\collect_seed\\collect_seed.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -300,6 +332,14 @@
                 "id": "74eb559b-68ed-4510-a44a-f20b966835db",
                 "resourcePath": "sounds\\gameplay_track\\gameplay_track.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e5107a39-aecd-477b-aad2-1c682847dfb7",
+            "Value": {
+                "id": "5e143515-4f22-49a6-abad-4ff4ec418b3c",
+                "resourcePath": "objects\\collectable\\collectable.yy",
+                "resourceType": "GMObject"
             }
         },
         {
