@@ -2,7 +2,8 @@
 // You can write your code in this editor
 /// @description Insert description here
 // You can write your code in this editor
-movespeed = 4;
+movespeed = 3;
 hsp = 0;
 vsp = 0;
 interactionThreshold = 8;
+global.wasInteracting = 0;

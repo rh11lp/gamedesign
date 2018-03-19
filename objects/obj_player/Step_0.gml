@@ -3,6 +3,9 @@ keyRight = keyboard_check(ord("D"));
 keyLeft = keyboard_check(ord("A"));
 keyUp = keyboard_check(ord("W"));
 keyDown = keyboard_check(ord("S"));
+interact = keyboard_check(ord("E"));
+
+meetingMother = place_meeting(x+4, y+4, obj_mother) || place_meeting(x-4, y-4, obj_mother)
  
 //calculate movement
 var moveH = keyRight - keyLeft;
@@ -23,7 +26,7 @@ if(place_meeting(x+hsp, y, obj_obstacle)) {
 x += hsp;
 
 
-//horizontal collision
+//vertical collision
 if(place_meeting(x, y+vsp, obj_obstacle)) {
 	while(!place_meeting(x,y+sign(vsp),obj_obstacle)) {
 		y += sign(vsp);
@@ -32,9 +35,31 @@ if(place_meeting(x, y+vsp, obj_obstacle)) {
 }
 y += vsp;
 
-if(place_meeting(x+interactionThreshold, y+interactionThreshold, obj_mother)){
-	//speak
+//mother speaks to daughter
+if(meetingMother && global.inConvo != 1){
+	
+	if(global.seeds == 0){
+		global.MCI = 3;	
+	}
+	global.conversation = 1;
+	global.npcVar = obj_mother;
+	
 }
+
+//interact with mother
+if(interact && !global.wasInteracting && global.inConvo && meetingMother)
+{
+	if(global.MCI < global.MotherConvoLength-1){
+		global.MCI++;
+		show_debug_message("MCI "+string(global.MCI));
+		global.wasInteracting = interact;
+		alarm_set(0, 8); 
+	}else{
+		global.conversation = 0;	
+		global.game_state++;
+	}
+}
+
 
 
 //////sprite aesthetic
