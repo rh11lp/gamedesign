@@ -5,16 +5,22 @@ curr_x = x;
 curr_y = y;
 
 //sprite aesthetic
-if (curr_y < prev_y) {
- 	sprite_index = spr_mother_walking;
-	
-}else if (curr_y > prev_y){
+
+if (curr_y < prev_y){
 	sprite_index = spr_mother_back;
+	//image_speed = 1;
+	
+}
+
+if (curr_y > prev_y) {
+ 	sprite_index = spr_mother_walking;
+	//image_speed = 1;
 	
 }
 
 if(curr_x == prev_x && curr_y == prev_y){
 	sprite_index = spr_mother_idle;	
+	//image_speed = 1;
 } 
 
 prev_y = curr_y;
@@ -22,8 +28,16 @@ prev_x = curr_x;
 
 if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game_state){
 	if(!(global.game_state > array_length_1d(pathsToFollow)-1)){
-		show_debug_message("this should technically only happen once?");
 		current_gamestate = global.game_state;
 		path_start(pathsToFollow[global.game_state], 2, path_action_stop, 1);
+	}
+}
+
+var target;
+
+if(instance_exists(obj_enemy)){
+	target = instance_nearest(x, y, obj_enemy);
+	if(distance_to_object(target)<30){
+		target.monHealth=-momDamage;	
 	}
 }

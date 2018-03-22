@@ -3,9 +3,10 @@ keyRight = keyboard_check(ord("D"));
 keyLeft = keyboard_check(ord("A"));
 keyUp = keyboard_check(ord("W"));
 keyDown = keyboard_check(ord("S"));
-interact = keyboard_check(ord("E"));
+interact = keyboard_check_pressed(ord("E"));
 
-meetingMother = place_meeting(x+4, y+4, obj_mother) || place_meeting(x-4, y-4, obj_mother)
+
+meetingMother = place_meeting(x, y, obj_mother) || place_meeting(x-4, y-4, obj_mother)
  
 //calculate movement
 var moveH = keyRight - keyLeft;
@@ -35,10 +36,10 @@ if(place_meeting(x, y+vsp, obj_obstacle)) {
 }
 y += vsp;
 
-//mother speaks to daughter
-if(meetingMother && global.inConvo != 1){
+//daughter initiates conversation
+if(meetingMother && !global.inConvo && interact){
 	
-	if(global.seeds == 0){
+	if(global.game_state == 0 && global.seeds == 0){
 		global.MCI = 3;	
 	}
 	global.conversation = 1;
@@ -46,27 +47,48 @@ if(meetingMother && global.inConvo != 1){
 	
 }
 
-//interact with mother
-if(interact && !global.wasInteracting && global.inConvo && meetingMother)
-{
-	if(global.MCI < global.MotherConvoLength-1){
+//continue conversation
+if(interact && global.inConvo && meetingMother){
+	if(global.MCI < global.MotherConvoLength-1 ){
 		global.MCI++;
-		show_debug_message("MCI "+string(global.MCI));
-		global.wasInteracting = interact;
-		alarm_set(0, 8); 
-	}else{
+	}else if(global.MCI == global.MotherConvoLength-1){
 		global.conversation = 0;	
 		global.game_state++;
+		show_debug_message("game_state "+string(global.game_state));
+		global.MCI = 0;
+		global.inConvo = 0;
+		global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.game_state); 
+		
+	}
+}
+		
+// GET PULLED IN WITH MOTHER
+if(global.game_state == 1 && path_index == -1){
+	if(path_position != 1){
+		path_start(intro_daughter_follow, 1, path_action_stop, 0);
 	}
 }
 
 
+/***************************************************************************************/
 
-//////sprite aesthetic
-////if (keyRight || keyLeft) {
-////	sprite_index = spr_player_run;
-////	if (keyRight)  image_xscale = 1;
-////	if (keyLeft)   image_xscale = -1;
-////} else {
-////	sprite_index = spr_player;
-////}
+//sprite aesthetic
+if (keyUp) {
+	last_key = "up";
+	sprite_index = spr_player_back;
+	image_xscale = 1;
+	
+}else if (keyDown){
+	sprite_index = spr_player;
+	image_xscale = 1;
+	last_key = "down";
+	
+} else if (keyLeft || keyRight){
+	sprite_index = spr_player_side;
+	if (keyRight)  image_xscale = 1; last_key = "right";
+	if (keyLeft)   image_xscale = -1; last_key = "left ";
+}
+else {
+	sprite_index = spr_player_idle;
+	image_xscale = 1;
+}
