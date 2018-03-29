@@ -16,4 +16,4 @@ last_convo = 0;
 health = 10;
 damage = 0;
 
-
+trigger_yoink = false;

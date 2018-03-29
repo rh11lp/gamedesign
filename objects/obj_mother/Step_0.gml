@@ -33,11 +33,12 @@ if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game
 	}
 }
 
-var target;
+
 
 if(instance_exists(obj_enemy)){
 	target = instance_nearest(x, y, obj_enemy);
-	if(distance_to_object(target)<30){
-		target.monHealth=-momDamage;	
+	if(distance_to_object(target)<=30 && ableToAttack){
+		ableToAttack = false;
+		alarm_set(1, 20);
 	}
 }

@@ -11,8 +11,9 @@ if(!meetingMother){
 	move_towards_point(obj_mother.x, obj_mother.y, 2)
 }
 
-if(distance_to_object(obj_mother)<30){
-	obj_mother.momHealth=-monDamage;	
+if(distance_to_object(obj_mother)<50 && ableToAttack){
+	ableToAttack = false; 
+	alarm_set(0, 20);
 } 
 
 if(distance_to_object(obj_mother)=30){

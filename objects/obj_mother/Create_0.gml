@@ -18,3 +18,5 @@ current_gamestate = 0;
 
 momHealth = 30;
 momDamage = 5;
+ableToAttack = true;
+var target;

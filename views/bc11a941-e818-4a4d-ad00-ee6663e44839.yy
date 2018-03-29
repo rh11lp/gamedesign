@@ -1,0 +1,30 @@
+{
+    "id": "bc11a941-e818-4a4d-ad00-ee6663e44839",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "bc11a941-e818-4a4d-ad00-ee6663e44839",
+    "children": [
+        "8589a8da-bb44-4746-aeeb-a20b6692f94e",
+        "264b9e85-44a8-4dc3-8b53-b3b72726acb3",
+        "187251d1-b101-496c-b554-8530135fc21a",
+        "9e282ed2-a668-4156-b860-54eb3bf0235a",
+        "56d5ba42-5d6e-48e8-8121-80a0ef5b2c48",
+        "37a2aa9a-95a3-4d5b-a670-53cd6df14217",
+        "3613b34c-7932-4fa5-82ec-ccf86c5a0d16",
+        "99c3ee46-2e55-4d7b-abc6-1af6d23e9e1a",
+        "72940ac8-976c-41e4-a522-1483916fdaaa",
+        "9b79a7f9-2e99-4f4f-97c3-f8d62f7b2697",
+        "9cc41d15-202d-4987-b53a-12e7bbbcdc91",
+        "0b09fe31-4a1b-40ac-8932-39dd830b0cc6",
+        "1c05bb08-790d-41f5-b642-6c006b145072",
+        "2bec8991-f84d-444e-ba40-16e1d1423345",
+        "0d6dd93d-eabf-4e66-b2f6-c8829dda6321",
+        "6700efdd-58fd-400a-98a7-b2c71d1e8970",
+        "d0a2d2bb-5bca-4eba-a93a-f53d19177a14",
+        "aab3a913-7027-4154-a5e0-fefc6595e0e0"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "VILLAGE",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

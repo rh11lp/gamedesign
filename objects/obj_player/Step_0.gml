@@ -69,6 +69,19 @@ if(global.game_state == 1 && path_index == -1){
 	}
 }
 
+if(trigger_yoink){
+	if (point_distance(x, y, obj_mother.nearest.x, obj_mother.nearest.y) > 5) {
+		move_towards_point(obj_mother.nearest.x, obj_mother.nearest.y, 2);
+	} else {
+		speed = 0;
+		trigger_yoink = false;
+		global.dontWander = 0;
+		global.MCI = 0;
+		global.inConvo = 0;
+		global.game_state = obj_mother.current_gamestate;
+	}
+}
+
 
 /***************************************************************************************/
 
