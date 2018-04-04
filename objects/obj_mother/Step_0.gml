@@ -8,19 +8,16 @@ curr_y = y;
 
 if (curr_y < prev_y){
 	sprite_index = spr_mother_back;
-	//image_speed = 1;
 	
 }
 
 if (curr_y > prev_y) {
  	sprite_index = spr_mother_walking;
-	//image_speed = 1;
 	
 }
 
 if(curr_x == prev_x && curr_y == prev_y){
 	sprite_index = spr_mother_idle;	
-	//image_speed = 1;
 } 
 
 prev_y = curr_y;

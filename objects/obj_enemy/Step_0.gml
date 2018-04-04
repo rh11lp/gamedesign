@@ -7,12 +7,15 @@ if(monHealth<=0){
 	instance_destroy();
 }
 
-if(!meetingMother){
+if(!meetingMother && !attacking){
 	move_towards_point(obj_mother.x, obj_mother.y, 2)
+} else {
+	speed = 0;
 }
 
 if(distance_to_object(obj_mother)<50 && ableToAttack){
 	ableToAttack = false; 
+	attacking = true;
 	alarm_set(0, 20);
 } 
 

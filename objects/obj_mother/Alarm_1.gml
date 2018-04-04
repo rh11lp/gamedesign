@@ -3,6 +3,8 @@
 
 sprite_index = spr_mother_attack;
 if(instance_exists(target)){
-	target.monHealth=-momDamage;
+	show_debug_message("ding ding ding")
+	target.monHealth-=momDamage;
 }
 ableToAttack = true;
+sprite_index = spr_mother_attack;
