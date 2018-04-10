@@ -5,5 +5,6 @@ monDamage = 5;
 
 ableToAttack = true;
 attacking = false;
+global.numEnemy++;
 
 global.numEnemy++;

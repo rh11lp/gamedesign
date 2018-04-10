@@ -935,6 +935,14 @@
             }
         },
         {
+            "Key": "a75d7818-5e54-455b-973c-ac804ea8cee3",
+            "Value": {
+                "id": "fc179dba-0244-4583-ad50-371611162730",
+                "resourcePath": "objects\\obj_playerSeed\\obj_playerSeed.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a853fb74-2673-42bb-b341-16934d477309",
             "Value": {
                 "id": "85879d61-7b07-4177-80d6-85f37147ea52",

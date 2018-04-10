@@ -53,4 +53,5 @@ MotherConversation[9, 2] = "Stay nearby so that I can protect you.";
 
 global.MotherConvoLength = array_length_2d(MotherConversation, global.game_state); 
 
-
+global.inCombat = false;
+global.numEnemy = 0;

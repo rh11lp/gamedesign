@@ -7,6 +7,8 @@ hsp = 0;
 vsp = 0;
 last_key = "none";
 
+directionStand = 1
+
 //interaction
 interactionThreshold = 15;
 wasInteracting = 0;
