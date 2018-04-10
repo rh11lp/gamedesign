@@ -27,6 +27,9 @@ global.MCI = 0;
 */
 global.game_state = 0;
 
+global.inCombat = false;
+global.numEnemy = 0;
+
 
 //STATE 0 - BEGIN
 MotherConversation[0, 0] = "Oh? What have you found there?";

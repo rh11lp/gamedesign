@@ -15,3 +15,6 @@ if(global.game_state == 2 && global.spawnPhase==1){
 	}
 }
 
+if(global.inCombat && global.numEnemy <= 0){
+	global.inCombat = false;
+}

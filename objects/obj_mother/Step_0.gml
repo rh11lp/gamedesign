@@ -35,6 +35,7 @@ if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game
 if(instance_exists(obj_enemy)){
 	target = instance_nearest(x, y, obj_enemy);
 	if(distance_to_object(target)<=30 && ableToAttack){
+		global.inCombat = true;
 		ableToAttack = false;
 		alarm_set(1, 20);
 	}

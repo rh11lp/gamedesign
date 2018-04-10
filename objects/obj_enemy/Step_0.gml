@@ -4,6 +4,7 @@
 meetingMother = place_meeting(x, y, obj_mother);
 
 if(monHealth<=0){
+	global.numEnemy--;
 	instance_destroy();
 }
 

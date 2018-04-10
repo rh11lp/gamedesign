@@ -17,3 +17,9 @@ health = 10;
 damage = 0;
 
 trigger_yoink = false;
+
+
+directionStand = 1;
+
+incX = 0;
+incY = 0;
