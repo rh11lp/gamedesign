@@ -20,6 +20,18 @@ if(distance_to_object(obj_mother)<50 && ableToAttack){
 	alarm_set(0, 20);
 } 
 
-if(distance_to_object(obj_mother)=30){
+if(distance_to_object(obj_mother)<=30){
 	path_end();
+}
+
+if(instance_exists(obj_playerSeed) && !obj_playerSeed.claimed){
+	if(distance_to_object(obj_playerSeed)<=30){
+		path_end();
+		if(!place_meeting(x, y, obj_playerSeed)){
+			move_towards_point(obj_playerSeed.x, obj_playerSeed.y, 2);
+		} else{
+			obj_playerSeed.claimed = true
+		}
+	
+	}
 }
