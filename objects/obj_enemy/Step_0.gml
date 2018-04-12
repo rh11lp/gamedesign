@@ -15,13 +15,13 @@ if(!meetingMother && !attacking){
 	speed = 0;
 }
 
-if(distance_to_object(obj_mother)<50 && ableToAttack){
+if(distance_to_object(obj_mother)<20 && ableToAttack){
 	ableToAttack = false; 
 	attacking = true;
 	alarm_set(0, 40);
 } 
 
-if(distance_to_object(obj_mother)<=30){
+if(distance_to_object(obj_mother)<=20){
 	path_end();
 }
 

@@ -951,6 +951,14 @@
             }
         },
         {
+            "Key": "a9f87e9b-596e-4945-8e8a-1fc6f24363b7",
+            "Value": {
+                "id": "68170927-003d-4eac-9362-f3b304be4d96",
+                "resourcePath": "paths\\intro_fourth\\intro_fourth.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "aa67b894-7ec2-4303-b480-9e144c9c5aed",
             "Value": {
                 "id": "b0cf8412-ebb5-41c5-9547-e7c323f88168",

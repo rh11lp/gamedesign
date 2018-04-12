@@ -45,23 +45,26 @@ if(meetingMother && !global.inConvo && interact && !global.inCombat){
 	}
 	global.conversation = 1;
 	global.npcVar = obj_mother;
-	show_debug_message("DAUGHTER NOT IN CONVO game_state "+string(global.game_state));
 	
 }
 
 //continue conversation
 if(interact && global.inConvo && meetingMother){
 	
-		
-	show_debug_message("DAUGHTER IN CONVO game_state "+string(global.game_state));
+	global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.conversationIndex);
+	
+	show_debug_message("shouldnt end yet "+ string(global.MCI == global.MotherConvoLength-1))
+	
 	if(global.MCI < global.MotherConvoLength-1 ){
 		global.MCI++;
 	}else if(global.MCI == global.MotherConvoLength-1){
 		global.conversation = 0;	
 		global.game_state++;
+		global.conversationIndex++;
 		global.MCI = 0;
 		global.inConvo = 0;
-		global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.game_state); 
+		global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.game_state); 	
+
 		
 	}
 }
@@ -82,7 +85,7 @@ if(trigger_yoink){
 		global.dontWander = 0;
 		global.MCI = 0;
 		global.inConvo = 0;
-		global.game_state = obj_mother.current_gamestate;
+		obj_mother.triggerIntersect = 0;
 	}
 }
 
@@ -108,7 +111,7 @@ if(global.seeds > 0){
 			global.seeds--;
 		}
 	} 
-} else {
+} else if(!global.inCombat || global.seeds <= 0) {
 	if(instance_exists(obj_reticle)){
 		instance_destroy(obj_reticle);
 	}

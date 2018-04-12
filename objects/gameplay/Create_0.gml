@@ -30,6 +30,7 @@ global.game_state = 0;
 global.inCombat = false;
 global.numEnemy = 0;
 
+global.conversationIndex = 0;
 
 //STATE 0 - BEGIN
 MotherConversation[0, 0] = "Oh? What have you found there?";
@@ -44,8 +45,8 @@ MotherConversation[1, 1] = "Good. Try to stay close.";
 MotherConversation[2, 0] = "Ah! An ambush!";
 
 MotherConversation[3, 0] = "Daughter, that was very brave of you.";
-MotherConversation[3, 1] = "Thank you for helping.";
-MotherConversation[3, 2] = "Now come, we must continue.";
+MotherConversation[3, 1] = "I doubt that fight would have ended favourably\nwithout your intervention.";
+MotherConversation[3, 2] = "Now come, we must move on.";
 
 //STATE 2 - DONT WANDER 
 MotherConversation[9, 0] = "My daughter, please do not leave my sight.";

@@ -1,8 +1,6 @@
 // @description Insert description here
 // You can write your code in this editor
 
-
-
 if(global.game_state == 2 && global.spawnPhase != 3){
 	global.spawnPhase = 1;	
 	global.conversation = 1;

@@ -8,7 +8,8 @@
         "8d18c93a-db3c-4d40-87b3-ebd535e19d90",
         "d233a912-b165-4bbd-acfb-8a5b1388ef27",
         "e24eaedf-030d-4582-97db-0e2dcf4a0676",
-        "b3e7e046-98e9-4956-9206-8e129cc2505d"
+        "b3e7e046-98e9-4956-9206-8e129cc2505d",
+        "a9f87e9b-596e-4945-8e8a-1fc6f24363b7"
     ],
     "filterType": "GMPath",
     "folderName": "paths",

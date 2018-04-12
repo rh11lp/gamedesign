@@ -23,8 +23,19 @@ if(!global.inCombat){
 prev_y = curr_y;
 prev_x = curr_x; 
 
+if(instance_exists(obj_enemy)){
+	
+	target = instance_nearest(x, y, obj_enemy);
+	if(distance_to_object(target)<=20 && ableToAttack){
+		global.inConvo = false;
+		global.inCombat = true;
+		ableToAttack = false;
+		alarm_set(1, 20);
+	}
+}
 
-if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game_state){
+//show_debug_message("Current vs actual gamestate:"+string(current_gamestate)+" / "+string(global.game_state))
+if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game_state && !global.inCombat){
 	if(!(global.game_state > array_length_1d(pathsToFollow)-1)){
 		current_gamestate = global.game_state;
 		path_start(pathsToFollow[global.game_state], 2, path_action_stop, 1);
@@ -33,13 +44,4 @@ if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game
 
 
 
-if(instance_exists(obj_enemy)){
-	
-	target = instance_nearest(x, y, obj_enemy);
-	if(distance_to_object(target)<=30 && ableToAttack){
-		global.inConvo = false;
-		global.inCombat = true;
-		ableToAttack = false;
-		alarm_set(1, 20);
-	}
-}
+
