@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(global.conversation){
-	
+	show_debug_message("MCI "+string(global.MCI));
+	show_debug_message("DRAW PHASE game_state "+string(global.game_state));
 	global.inConvo = 1;
 	bubble_x = global.npcVar.x-10;
 	bubble_y = global.npcVar.y-50;

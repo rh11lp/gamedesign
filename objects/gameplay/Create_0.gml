@@ -42,7 +42,10 @@ MotherConversation[1, 0] = "Are you ready? The path becomes\ndangerous from here
 MotherConversation[1, 1] = "Good. Try to stay close.";
 
 MotherConversation[2, 0] = "Ah! An ambush!";
-MotherConversation[2, 1] = "Seek shelter, daughter, I will fend them off.";
+
+MotherConversation[3, 0] = "Daughter, that was very brave of you.";
+MotherConversation[3, 1] = "Thank you for helping.";
+MotherConversation[3, 2] = "Now come, we must continue.";
 
 //STATE 2 - DONT WANDER 
 MotherConversation[9, 0] = "My daughter, please do not leave my sight.";

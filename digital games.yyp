@@ -1215,6 +1215,14 @@
             }
         },
         {
+            "Key": "dbfd18b1-9b24-43ef-b824-5f25787d4eac",
+            "Value": {
+                "id": "d7454520-1ba6-45ea-8d49-f3c189de3b93",
+                "resourcePath": "sprites\\spr_mother_portrait\\spr_mother_portrait.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dcab7c4c-429c-4dc1-9ca1-633229581f93",
             "Value": {
                 "id": "734baf19-1584-4202-b8a3-34397f84213f",

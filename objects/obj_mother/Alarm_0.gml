@@ -5,5 +5,7 @@
 if(global.game_state == 9 && obj_player.path_index == -1 ){
 	nearest = instance_nearest(obj_player.x, obj_player.y, returnpoint);
 	obj_player.trigger_yoink = true;
+	alarm_set(2, 10);
+
 	
 }

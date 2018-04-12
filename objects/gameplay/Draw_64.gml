@@ -8,3 +8,6 @@ draw_set_font(f_pixel);
 draw_text(35, 15, string(global.seeds));
 draw_sprite(spr_seed, 0, 15, 15);
 
+draw_text(100, 15, string(obj_mother.momHealth)+"/30");
+draw_sprite(spr_mother_portrait, 0, 70, 15);
+

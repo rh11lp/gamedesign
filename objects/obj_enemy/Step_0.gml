@@ -6,6 +6,7 @@ meetingMother = place_meeting(x, y, obj_mother);
 if(monHealth<=0){
 	global.numEnemy--;
 	instance_destroy();
+	show_debug_message(string(global.numEnemy))
 }
 
 if(!meetingMother && !attacking){
@@ -17,7 +18,7 @@ if(!meetingMother && !attacking){
 if(distance_to_object(obj_mother)<50 && ableToAttack){
 	ableToAttack = false; 
 	attacking = true;
-	alarm_set(0, 20);
+	alarm_set(0, 40);
 } 
 
 if(distance_to_object(obj_mother)<=30){
@@ -25,12 +26,16 @@ if(distance_to_object(obj_mother)<=30){
 }
 
 if(instance_exists(obj_playerSeed) && !obj_playerSeed.claimed){
-	if(distance_to_object(obj_playerSeed)<=30){
+	target = instance_nearest(x, y, obj_playerSeed);
+	if(distance_to_object(target)<=60){
 		path_end();
-		if(!place_meeting(x, y, obj_playerSeed)){
-			move_towards_point(obj_playerSeed.x, obj_playerSeed.y, 2);
+		if(!place_meeting(x, y, target)){
+			move_towards_point(target.x, target.y, 2);
 		} else{
-			obj_playerSeed.claimed = true
+			target.claimed = true
+			speed = 0;
+			ableToAttack = false;
+			sprite_index = spr_enemy_front
 		}
 	
 	}

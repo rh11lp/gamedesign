@@ -37,6 +37,7 @@ if(place_meeting(x, y+vsp, obj_obstacle)) {
 y += vsp;
 
 //daughter initiates conversation
+
 if(meetingMother && !global.inConvo && interact && !global.inCombat){
 	
 	if(global.game_state == 0 && global.seeds == 0){
@@ -44,17 +45,20 @@ if(meetingMother && !global.inConvo && interact && !global.inCombat){
 	}
 	global.conversation = 1;
 	global.npcVar = obj_mother;
+	show_debug_message("DAUGHTER NOT IN CONVO game_state "+string(global.game_state));
 	
 }
 
 //continue conversation
 if(interact && global.inConvo && meetingMother){
+	
+		
+	show_debug_message("DAUGHTER IN CONVO game_state "+string(global.game_state));
 	if(global.MCI < global.MotherConvoLength-1 ){
 		global.MCI++;
 	}else if(global.MCI == global.MotherConvoLength-1){
 		global.conversation = 0;	
 		global.game_state++;
-		show_debug_message("game_state "+string(global.game_state));
 		global.MCI = 0;
 		global.inConvo = 0;
 		global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.game_state); 
@@ -103,6 +107,10 @@ if(global.seeds > 0){
 			instance_create_depth(x+incX, y+incY, 1, obj_playerSeed);
 			global.seeds--;
 		}
+	} 
+} else {
+	if(instance_exists(obj_reticle)){
+		instance_destroy(obj_reticle);
 	}
 }
 /***************************************************************************************/
