@@ -11,7 +11,8 @@
         "e56efbf9-11ef-4733-8446-a0535983f4e9",
         "bb260b3e-05ed-4cf9-a77c-6101a313ce6e",
         "d7787866-0819-4cbd-b502-36efa82c7e6f",
-        "dbfd18b1-9b24-43ef-b824-5f25787d4eac"
+        "dbfd18b1-9b24-43ef-b824-5f25787d4eac",
+        "158c4e98-caf9-46c2-9484-bdb6240e7143"
     ],
     "filterType": "GMSprite",
     "folderName": "Mother",

@@ -5,4 +5,4 @@ if(instance_exists(target)){
 	target.monHealth-=momDamage;
 }
 ableToAttack = true;
-sprite_index = spr_mother_attack;
+sprite_index =  spr_mother_attack;

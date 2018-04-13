@@ -4,7 +4,7 @@
 
 //IGF PLAYER TRIES TO LEAVE MOTHER, YANK HER BACK
 
-if(global.game_state >= 1 && triggerIntersect < 9 && global.game_state != 3 && global.inConvo != 1){
+if(global.game_state == 1 && triggerIntersect < 9  && global.inConvo != 1){
 	global.dontWander = 1;
 	global.MCI = choose(0,1,2);
 	triggerIntersect = 9;

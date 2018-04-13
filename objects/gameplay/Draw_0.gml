@@ -21,13 +21,13 @@ if(global.dontWander){
 	global.inConvo = 1;
 	horMiddle = camera_get_view_x(view_camera[0]) + (view_wview[0] / 2);
 	vertMiddle = camera_get_view_y(view_camera[0]) + (view_hview[0] / 2)+100;
-	textWidth = string_width(MotherConversation[9, global.MCI])+15;
-	textHeight = string_height(MotherConversation[9, global.MCI])+2;
+	textWidth = string_width(MotherConversation[dontWanderID, global.MCI])+15;
+	textHeight = string_height(MotherConversation[dontWanderID, global.MCI])+2;
 	draw_set_color(c_white);
 	draw_rectangle(horMiddle -  (textWidth / 2), vertMiddle - (textHeight / 2), horMiddle + (textWidth / 2), vertMiddle + (textHeight / 2), false)
 	draw_set_color(c_black);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(f_pixel);
-	draw_text(horMiddle,vertMiddle, MotherConversation[9, global.MCI]);
+	draw_text(horMiddle,vertMiddle, MotherConversation[dontWanderID, global.MCI]);
 }

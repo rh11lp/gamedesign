@@ -20,6 +20,7 @@ if(!global.inCombat){
 		sprite_index = spr_mother_idle;	
 	} 
 }
+
 prev_y = curr_y;
 prev_x = curr_x; 
 

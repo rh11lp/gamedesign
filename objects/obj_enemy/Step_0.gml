@@ -35,7 +35,8 @@ if(instance_exists(obj_playerSeed) && !obj_playerSeed.claimed){
 			target.claimed = true
 			speed = 0;
 			ableToAttack = false;
-			sprite_index = spr_enemy_front
+			sprite_index = spr_enemy_eat
+			image_speed = 1;
 		}
 	
 	}

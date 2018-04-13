@@ -53,8 +53,6 @@ if(interact && global.inConvo && meetingMother){
 	
 	global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.conversationIndex);
 	
-	show_debug_message("shouldnt end yet "+ string(global.MCI == global.MotherConvoLength-1))
-	
 	if(global.MCI < global.MotherConvoLength-1 ){
 		global.MCI++;
 	}else if(global.MCI == global.MotherConvoLength-1){
@@ -89,7 +87,7 @@ if(trigger_yoink){
 	}
 }
 
-if(global.seeds > 0){
+if(global.seeds > 0 && global.inCombat){
 	
 	if(global.inCombat){
 		switch(directionStand){
