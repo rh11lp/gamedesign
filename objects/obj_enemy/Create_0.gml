@@ -5,4 +5,5 @@ monDamage = 2;
 
 ableToAttack = true;
 attacking = false;
-global.numEnemy++;
+
+chasingSeed = false;

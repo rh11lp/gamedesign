@@ -31,7 +31,7 @@ global.inCombat = false;
 global.numEnemy = 0;
 
 global.conversationIndex = 0;
-dontWanderID = 9;
+dontWanderID = 99;
 
 //STATE 0 - BEGIN
 MotherConversation[0, 0] = "Oh? What have you found there?";
@@ -62,6 +62,17 @@ MotherConversation[5, 2] = "I really am very proud of you.";
 
 MotherConversation[6, 0] = "Another ambush?! The wildlife is getting restless."
 
+MotherConversation[7, 0] = "I wonder what's causing them to be so restless...";
+MotherConversation[7, 1] = "*cough* Come, hurry. We don't have much time. ";
+
+MotherConversation[8, 0] = "I wonder what's causing them to be so restless...";
+MotherConversation[8, 1] = "You're getting braver and braver, Daughter.";
+MotherConversation[8, 2] = "You're gettinging braver and braver, Daughter.\nYou might just make a fine warrior, yet.";
+MotherConversation[8, 2] = "Let's continue our journey. We're almost there.";
+
+MotherConversation[9, 0] = "We're almost there. You're doing well, Daughter.";
+MotherConversation[9, 1] = "I'm so so proud of you. Just a little ways left to--";
+
 //STATE 2 - DONT WANDER 
 MotherConversation[dontWanderID, 0] = "My daughter, please do not leave my sight.";
 MotherConversation[dontWanderID, 1] = "Don't wander too far.";
@@ -73,4 +84,5 @@ global.inCombat = false;
 global.numEnemy = 0;
 
 global.skippingConvo = false;
+spawnTriggered = 0;
 

@@ -41,29 +41,34 @@ y += vsp;
 if(meetingMother && !global.inConvo && interact && !global.inCombat){
 	
 	if(global.game_state == 0 && global.seeds == 0){
-		global.MCI = 3;	
+		global.MCI = 3;	 
 	}
-	global.conversation = 1;
-	global.npcVar = obj_mother;
+	if(global.conversationIndex < array_height_2d(gameplay.MotherConversation)-1){
+		global.conversation = 1;
+		global.npcVar = obj_mother;
+		global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.conversationIndex);
+
+	}
 	
 }
 
 //continue conversation
 if(interact && global.inConvo && meetingMother){
 	
-	global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.conversationIndex);
 	
 	if(global.MCI < global.MotherConvoLength-1 ){
 		global.MCI++;
 	}else if(global.MCI == global.MotherConvoLength-1){
 		global.conversation = 0;	
 		global.game_state++;
+		show_debug_message("is this happening too soon? "+ string(global.game_state));
+		if(global.conversationIndex == 3){
+			//skip 4
+			global.conversationIndex++;
+		}
 		global.conversationIndex++;
 		global.MCI = 0;
-		global.inConvo = 0;
-		global.MotherConvoLength = array_length_2d(gameplay.MotherConversation, global.game_state); 	
-
-		
+		global.inConvo = 0; 		
 	}
 }
 		

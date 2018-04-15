@@ -11,7 +11,6 @@ directionStand = 1
 
 //interaction
 interactionThreshold = 15;
-wasInteracting = 0;
 last_convo = 0;
 
 //combat

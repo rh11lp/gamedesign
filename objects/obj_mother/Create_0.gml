@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-pathsToFollow = [intro_first, intro_second, intro_third, intro_fourth];
+pathsToFollow = [intro_first, intro_second, intro_third, intro_fourth, intro_fifth, intro_sixth];
 
 path_start(intro_first, 2, path_action_stop, 1);
 
