@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Trigger spawn phase
 // You can write your code in this editor
 global.spawnPhase = 1;
 global.conversation = 1;

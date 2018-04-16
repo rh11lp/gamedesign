@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+global.fadeToNext = false;
+a = 0; //alpha transparency of fadeout/fadein
+countFrame = 0;
+triggerMusic = 0;
+
+
 audio_play_sound(gameplay_track, 1, true);
 global.seeds = 0;
 global.conversation = 0;

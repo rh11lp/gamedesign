@@ -11,3 +11,7 @@ draw_sprite(spr_seed, 0, 15, 15);
 draw_text(100, 15, string(obj_mother.momHealth)+"/30");
 draw_sprite(spr_mother_portrait, 0, 70, 15);
 
+if(global.fadeToNext){
+	//draw rectangle.... this is cheaper than draw_rectangle apparently
+	draw_sprite_ext(spr_pixel,0,0,0,1024, 768, 0, c_black, a);
+}

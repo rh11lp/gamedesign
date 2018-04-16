@@ -11,10 +11,13 @@
         "3430bf01-74c5-49df-bfed-c0cfe0fe911c",
         "e56efbf9-11ef-4733-8446-a0535983f4e9",
         "858b1c8b-fa96-4036-b089-b11b7a51d4e3",
+        "932aa971-cf3e-485b-8eab-f0da1f0b6493",
         "bb260b3e-05ed-4cf9-a77c-6101a313ce6e",
         "d7787866-0819-4cbd-b502-36efa82c7e6f",
         "dbfd18b1-9b24-43ef-b824-5f25787d4eac",
-        "158c4e98-caf9-46c2-9484-bdb6240e7143"
+        "158c4e98-caf9-46c2-9484-bdb6240e7143",
+        "e628a5b6-8cca-4109-963f-952819136f0b",
+        "45ce0c1e-8874-4d71-80a1-2e74bd93301a"
     ],
     "filterType": "GMSprite",
     "folderName": "Mother",

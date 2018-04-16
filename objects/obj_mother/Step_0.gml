@@ -43,6 +43,9 @@ if(path_index == -1 && global.game_state > 0 && current_gamestate != global.game
 	}
 }
 
-
+if(momHealth <= 0){
+	show_debug_message("SHES DEAD JIM")
+	global.fadeToNext = true;
+}
 
 
